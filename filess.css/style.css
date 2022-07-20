@@ -4,10 +4,13 @@
   margin: 0;
   font-family: Bai Jamjuree;
   font-size: 18px;
+  
+  
+  
 }
 body{
    width: 100%;
-  
+ overflow: clip;
  }
  
  header{
@@ -89,6 +92,7 @@ background-size: cover;
  .QIC{
  width: 60%;
  margin: 60px auto;
+ overflow: hidden;
  }
   .QIC img{
  width: 100%;
@@ -247,6 +251,7 @@ margin: 40px auto;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding: 30px;
  }
  .social img{
   width: 20px;
@@ -295,10 +300,36 @@ align-items: center;
  
  }
   
- .QIC--text p{
+ .QIC--text p,
+ .QIC--text h2{
   
 text-align: justify;
  }
+ .QIC{
+width: 105%;
+margin: auto;
+ position: relative;
+ padding: 20rem;
+ top: 5rem;
+ bottom: 5rem;
+ overflow-x: clip;
 
+ }
+ .QIC--img{
+position: absolute;
+
+height: 90vh;
+
+ }
+ .QIC--img img{
+width: 90%;
+left: 3rem;
+
+
+ }
+ .QIC--text{
+position: absolute;
+right: 12rem;
+ }
  } 
 
