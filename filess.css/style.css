@@ -10,7 +10,8 @@
 }
 body{
    width: 100%;
- overflow: clip;
+   overflow-x: hidden;
+ 
  }
  
  header{
@@ -18,6 +19,7 @@ body{
 padding: 60px;
 background-repeat: no-repeat;
 background-size: cover;
+clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
 
 }
   .head img{
@@ -31,6 +33,7 @@ background-size: cover;
    width: 80%;
   margin: auto;
   text-align: center;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
  }
  .everything_copy h2{
   font-size: 32px;
@@ -60,6 +63,10 @@ background-size: cover;
    color: white;
    text-decoration: none;
    font-size: 15px;
+   
+ }
+ .button{
+transform: translateX(-100vw);
  }
  .mac{
    background-color: hsl(233, 100%, 69%);
@@ -71,11 +78,16 @@ background-size: cover;
     color: white;
     text-decoration: none;
     font-size: 15px;
+    
+ }
+ .buttons{
+transform: translateX(100vw);
  }
  .track_snippets{
    width: 50%;
   margin: auto;
   text-align: center;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
  }
  .track_snippets h2{
   font-size: 28px;
@@ -92,14 +104,19 @@ background-size: cover;
  .QIC{
  width: 60%;
  margin: 60px auto;
- overflow: hidden;
+ overflow-y: hidden;
  }
   .QIC img{
- width: 100%;
+ width: 100%; 
+ /* transform: translateX(-100vw); */
+ 
  
  }
   .QIC--text{
  margin-bottom: 10rem;
+ /* transform: translateX(100vw); */
+ 
+ 
  
  }
  .QIC--text h2{
@@ -126,6 +143,10 @@ background-size: cover;
  margin-bottom: 5rem;
  margin-top: 2rem;
  }
+/* .access_clipboard-text{
+  transform: translateX(-100vw);
+ opacity: 0,
+} */
  .access_clipboard h2{
   font-size: 30px;
   color:hsl(210, 10%, 33%) ;
@@ -306,30 +327,20 @@ align-items: center;
 text-align: justify;
  }
  .QIC{
-width: 105%;
-margin: auto;
+width: 80%;
+margin: 100px auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ 
+ 
  position: relative;
- padding: 20rem;
- top: 5rem;
- bottom: 5rem;
- overflow-x: clip;
+ left: -170px;
 
  }
- .QIC--img{
-position: absolute;
 
-height: 90vh;
-
- }
  .QIC--img img{
-width: 90%;
-left: 3rem;
-
-
- }
- .QIC--text{
-position: absolute;
-right: 12rem;
+  width: 100%;
  }
  } 
 
